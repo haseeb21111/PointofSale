@@ -1,0 +1,87 @@
+>Client
+   >build
+      >static
+         >css
+            main.a0c5ce66.css
+            main.a0c5ce66.css.map
+         >js
+            main.236d150c.js
+            main.236d150c.js,LICENSE.txt
+            main.236d150c.js.map
+      {}asset-manifest.json
+      favicon.ico
+      index.html
+      logo192.png
+      logo512.png
+      {} manifest.json
+      robots.txt
+   >node_modules
+   >public
+      favicon.ico
+      index.html
+      logo192.png
+      logo512.png
+      {}manifest.json
+      robots.txt
+   >src
+      >components
+         layout.css
+         Layout.jsx
+         Product.jsx
+         Product.css
+         Spinner.jsx
+      >pages
+         >bills
+           >Bills.jsx
+         >cart
+           Cart.jsx
+         >cashbook
+           Cashbook.jsx
+           cashbook.css
+         >customers
+           Customer.jsx
+         >home
+            Home.jsx
+         >insights
+            Insights.css
+            Insights.jsx
+         >login
+            Login.jsx
+         >product
+            Product.jsx
+         >register
+            Register.jsx
+      >redux
+         rootReducer.js
+         store.js
+      App.css
+      App.js
+      index.css
+      index.js
+   .gitignore
+   {} package-lock.json
+   {} package.json
+   README.md
+   yarn.lock
+
+>controllers
+   billsController.js
+   productController.js
+   userController.js
+>models
+   billsModel.js
+   productModel.js
+   userModel.js
+>node_modules
+>routes
+   billsRoutes.js
+   productRoutes.js
+   userRoutes.js
+>utils
+   data.js
+.env
+.gitignore
+{} package-lock.json
+package.json
+README.md
+server.js

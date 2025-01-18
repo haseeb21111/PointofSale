@@ -1,0 +1,103 @@
+.seller-info-page {
+  padding: 20px;
+}
+
+.add-new {
+  margin-bottom: 20px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.add-new:hover {
+  background-color: #40a9ff;
+}
+.product-card {
+  background-color: #f9f9f9;
+  padding: 16px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 16px;
+}
+
+.product-image img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /* Ensures larger images are cropped to fit within the 40x40 frame */
+  border-radius: 8px; /* Optional: Adds rounded corners for styling */
+}
+
+
+.product-info p {
+  margin: 0;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.description-box {
+  background-color: #e0f3ff;
+  padding: 16px;
+  border-radius: 8px;
+  color: #0073e6;
+  height: 100%;
+}
+
+.description-box h3 {
+  color: #0073e6;
+  margin-bottom: 8px;
+  font-weight: bolder;
+}
+
+.description-box p {
+  color: #333;
+  font-weight: normal;
+}
+.search-container {
+  display: flex;
+  justify-content: center; /* Centers the search bar horizontally */
+  margin-top: -50px; /* Adds 10px margin from the top */
+  margin-bottom: 50px;
+}
+.searchz-bar {
+  width:50%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #1890ff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+
+}
+
+.searchz-bar:focus {
+  box-shadow: 0px 4px 12px rgba(0, 0, 150, 0.3);
+}
+
+.searchz-bar .anticon {
+  color: #0080f8;
+}
+.filter-icon {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  
+  color: #0080f8;
+}
+.filter-icon {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  color: #0080f8;
+}
+
+.droplist{
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.filter-icon:hover {
+  opacity: 1;
+}

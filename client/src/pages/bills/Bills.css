@@ -1,0 +1,47 @@
+/* Container for the header and search/filter inputs */
+.header-containerd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 20px; /* Padding to add spacing around the header */
+  }
+  
+  /* Styling for the search and filter container */
+  .search-filter-containerd {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px; /* Limit width for container */
+    justify-content: center; /* Center the search and filter within its space */
+    margin-left: 15%;
+  }
+  
+  /* Styling for the search bar input */
+  .search-bard {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #1890ff;
+    border-radius: 20px;
+    max-width: 500px; /* Control max width of search input */
+  }
+  
+  /* Search icon styling within the input */
+  .search-bard .anticon {
+    color: #1890ff;
+  }
+
+  /* Styling for the filter icon */
+  .filter-icond {
+    font-size: 24px;
+    cursor: pointer;
+    color: #1890ff;
+  }
+  
+  /* Hover effect on filter icon */
+  .filter-icond:hover {
+    color: #40a9ff;
+  }
+  

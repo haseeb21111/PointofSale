@@ -1,0 +1,130 @@
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-form, .saler-form {
+  width: 48%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-form h3, .saler-form h3 {
+  margin-bottom: 15px;
+}
+
+.form-btn-add {
+  margin-top: 15px;
+}
+/* Style for the Existing User button in the top right */
+.seller-form-existing-user {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.9rem; /* Smaller font size */
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.seller-form-existing-user .anticon {
+  font-size: 0.7rem; /* Smaller icon size */
+  margin-left: 4px;
+}
+
+/* Style for the Add toggle switch in the bottom left */
+.seller-form-add-toggle {
+  position: absolute;
+  bottom: 10px; /* Slightly raised from bottom */
+  left: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35%;
+}
+
+.seller-form-add-toggle .ant-switch {
+  background-color: green;
+}
+
+.seller-form-add-toggle .ant-switch-checked {
+  background-color: green;
+}
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.delete-icon {
+  color: grey;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.dropdown-item span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 60px;
+  margin-top: -100px;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #1890ff;
+}
+
+.filterz {
+  opacity: 0.6; /* Initially low opacity */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.filter-icon:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+.filterop {
+  color: #0068c9;
+  
+}
+/* Custom style for dropdown scroll */
+.category-select-dropdown .ant-select-dropdown {
+    max-height: 216px; /* Limits visible items to 6 */
+    overflow-y: auto;
+    scrollbar-width:thin;
+}
+
+/* WebKit scrollbar styling */
+.category-select-dropdown .ant-select-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.category-select-dropdown .ant-select-dropdown::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.category-select-dropdown .ant-select-dropdown::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+.selected-filter {
+  font-weight: bold;
+  color: #1890ff;
+}
