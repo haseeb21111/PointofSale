@@ -1,0 +1,127 @@
+/* Full-page container with gradient background */
+.admin-dashboard-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  position: relative;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ff7e5f;
+}
+
+.dashboard-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Form Section */
+.dashboard-form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #fda085;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+}
+
+/* Logout Button */
+.floating-logout-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.floating-logout-button:hover {
+  background: #d11a1c;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 15px 20px;
+  }
+
+  .dashboard-form {
+    width: 90%;
+  }
+
+  .floating-logout-button {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}

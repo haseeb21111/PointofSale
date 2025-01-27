@@ -5,18 +5,27 @@ import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import Cart from './pages/cart/Cart';
 import Login from './pages/login/Login';
-import Register from './pages/register/Register';
 import Bills from './pages/bills/Bills';
 import Customers from './pages/customers/Customers';
 import Insights from './pages/insights/Insights';
 import Cashbook from './pages/cashbook/Cashbook';
 import SellerInfo from './pages/seller/SellerInfo'; // Import SellerInfo component
+import Admin from './pages/Admin/Admin'; // Import admin page
+import AdminLogin from './pages/Admin/AdminLogin'; // Admin Login Page
 
 export function ProtectedRouter({ children }) {
   if (localStorage.getItem("auth")) {
     return children;
   } else {
     return <Navigate to="/login" />;
+  }
+}
+// Separate protected route for admin
+export function AdminProtectedRouter({ children }) {
+  if (localStorage.getItem("adminAuth")) {
+    return children;
+  } else {
+    return <Navigate to="/admin-login" />;
   }
 }
 
@@ -67,8 +76,16 @@ function App() {
               <Cashbook />
             </ProtectedRouter>
           } />
+          {/* Admin routes */}
+        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/admin" element={
+          <AdminProtectedRouter>
+            <Admin />
+          </AdminProtectedRouter>
+        } />
+          
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+         
         </Routes>
       </Router>
     </>

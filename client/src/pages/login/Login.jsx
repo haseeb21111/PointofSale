@@ -3,7 +3,10 @@ import FormItem from 'antd/lib/form/FormItem';
 import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import {  Link, useNavigate } from 'react-router-dom';
+import adminLogo from '../../../src/components/assets/AdminLogo.png';
+
+import './Login.css'; // Is file mein CSS likhein agar styling chahiye
 
 const Login = () => {
 
@@ -43,10 +46,18 @@ const Login = () => {
   }, [navigate]);
 
   return (
-    <div className='form'>
+    <div className="login-container">
+      <Link to="/admin" className="admin-logo">
+        <img 
+          src={adminLogo}
+          alt="Admin Logo" 
+          className="logo-image" 
+        />
+      </Link>
+      <div className="login-card">
         <h2>POS SYSTEM</h2>
         <p>Login</p>
-        <div className="form-group">
+        
           <Form layout='vertical' onFinish={handlerSubmit}>
             <FormItem name="userId" label="Email Address">
               <Input placeholder='Enter Email Address'/>
@@ -55,12 +66,13 @@ const Login = () => {
               <Input type="password" placeholder='Enter Password'/>
             </FormItem>
             <div className="form-btn-add">
-              <Button htmlType='submit' className='add-new'>Login</Button>
-              <Link className='form-other' to="/register">Register Here!</Link>
+              <Button htmlType='submit' className="login-button">Login</Button>
+              
             </div>
           </Form>
         </div>
-    </div>
+        </div>
+    
   )
 }
 

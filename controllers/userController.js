@@ -20,18 +20,3 @@ export const loginController = async (req, res) => {
         console.log(error);
     }
 }
-
-//for register
-export const registerController = async (req, res) => {
-
-    try {
-
-        const newUser = new User({...req.body, verified: true});
-        await newUser.save();
-        res.status(200).send("New User Added Successfully!");
-
-    } catch(error) {
-        console.log(error);
-    }
-
-}
